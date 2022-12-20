@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Hahmlet:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+	font-family: 'OnGothic';
+	src:url('KoddiUDOnGothic-Bold.woff') format('woff'),
+			url('KoddiUDOnGothic-ExtraBold.woff') format('woff'),
+			url('KoddiUDOnGothic-Regular.woff') format('woff');
+}
+
+* {
+			
+}
+
+/* 헤더 스타일 */
+	header {
+			line-height: 1.4em;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: auto;
+			margin-bottom: 6rem;
+
+		}
+		nav {
+			width: 100%;
+			height: auto;
+		}
+		a {
+			color: grey;
+		}
+		nav a{
+			text-decoration: none;
+			color: grey;
+		}
+		a:hover {
+			font-style: italic;
+		}
+		a:active{
+			font-style: italic;
+		}
+		ul li {
+			list-style: none;
+		}
+		ol li {
+
+		}
+		.title, .title2 {
+			width: 100%;
+			max-width: 800px;
+			height: 8rem;
+			
+			border-top-left-radius: 60%;
+			position: absolute;
+			background-color: white;
+			background-image: url('title_1978.png');
+			background-size: cover;
+			background-repeat: no-repeat;
+			back
+			/* 가운데 정렬 */
+			margin: 0 auto;
+
+		}
+		.title2 {
+			border-top-left-radius: 0%;
+			border-bottom-left-radius: 0%;
+			background-image: url('title_1978.png');
+		}
+		.title_white2 {
+			width: 100%;
+			max-width: 800px;
+			height: 8rem;
+			border-top-left-radius: 60%;
+			position: absolute;
+			background-color: white;
+			background-size: cover;
+			background-repeat: no-repeat;
+			/* 가운데 정렬 */
+			margin: 0 auto;
+
+		}
+
+/* 푸터 스타일 */
+footer {
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	font-size: small;
+}
+
+/* -------------------- 본문 -------------------*/
+html {
+	background-color: rgba(35, 35, 35, 1.0);
+}
+body {
+	font-size: 16px;
+	line-height: 1.6em;
+	word-break: keep-all;
+
+	background-color: white;
+	font-weight: bold;
+	color: grey;
+	font-family: 'Gothic A1', Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	max-width: 800px;
+	/* 가운데 정렬 */
+	margin: 0 auto;
+
+	overflow-x: hidden;
+}
+b {
+	font-weight: 500;
+}
+button {
+	background-color: rgba(35,35,35,1);
+	color: whitesmoke;
+}
+
+/* -------------------- 사진 -------------------*/
+figure {
+	box-sizing: 150px;
+	white-space: normal;
+	/*padding-bottom: 1rem;*/
+	/*padding-top: 1rem;*/
+	position: relative;
+	text-align: center;
+}
+
+.profiles {
+	width: 150px;
+	height: 150px; 
+	overflow: hidden;
+	border-radius: 70%;
+	float: left;
+	/*margin: auto;*/
+}
+.profiles img{
+	width: 150px;
+	height: 150px; 
+	object-fit: cover;
+	filter: grayscale(100%);
+	border-style: inset;
+}
+.profiles figcaption {
+	padding: 1em;
+	/*
+	opacity: 0.7;*/
+}
+
+.performers {
+	border-color: white;
+	border-style: ridge;
+	box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px #eeff41;
+
+}
+.performers img{
+	filter: none;
+
+}
+
+
+
+/* -------------------- 내용 -------------------*/
+details {
+	background-color: whitesmoke;
+	padding: 1em;
+}
+details:hover {
+	background-color: rgba(35,35,35,1);
+}
+summary {
+	margin-bottom: 1em;
+	font-weight: 400;
+}
+summary:hover {
+	font-style: italic;
+	cursor: pointer;
+}
+/* 테이블 크기 */
+table {
+	width: 95%;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-top: 1em;
+	margin-bottom: 2em;
+}
+hr {
+
+}
+
+td {
+	max-width: 10em;
+}
+/* 제목-내용 위계 */
+dt {
+	font-size: 1em;
+}
+dd, li, ul {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+article {
+			width: auto;
+			padding-left: 2em;
+			padding-right: 1em;
+			margin-bottom: 2em;
+		}
+article a {
+}
+
+.small {
+	font-size: 0.6em;
+}
+
+/* 주석 마크 */
+small sup{
+	font-size: 0.8em;
+	line-height: 1em;
+}
+/* 주석 설명 */
+small li{
+	font-size: 0.8em;
+}
+
+/* 이미지 */
+img {
+	display: incline;
+	height: auto;
+	width: 100%;
+}
+.gallery {
+	overflow-x: scroll;
+}
+.gallery img{
+	height: 180px;
+	width: auto;
+}
+
+/* 인용 스타일 */
+marquee {
+
+}
+marquee:hover {
+	background-color: rgba(251,251,251,1);
+	/* 배경 색 바꾸기 고려 - 수정중 */
+}
+
+.signage, .signage2, .signage3, .signage4 {
+			padding-top: 0.3em;
+			padding-bottom: 0.3em;
+
+			/* 색 */
+			background-color: rgba(1, 1, 1, 0);
+			background-color: whitesmoke;
+			color: grey;
+
+			/* 줄바꿈 금지*/
+			white-space: nowrap;
+			/* infinite marquee with long sentence */
+			width: 100vw;
+			max-width: 100%;
+			overflow-x: hidden;
+			will-change: transform;
+			animation: marquee linear infinite;
+			/* */
+			margin-top: 2em;
+			margin-bottom: 0;
+		}
+		@keyframes marquee {
+			from { transform: translateX(0); }
+			to {transform: translateX(-50%)}
+		}
+
+/* -------------------- 스코어 그리기 -------------------*/
+
+/* -- block/inline -- */
+.O {
+	width: calc(100vw);
+	height: calc(70vh);
+	max-width: 100%;
+	max-height: 400px;
+}
+
+/* image */
+.R {
+	width: calc(100vw);
+	height: calc(100vh/1.9);
+	max-width: 700px;
+	max-height: 800px;
+
+	background-image: url('space_line.svg');
+	background-repeat: no-repeat;
+	background-size : cover;
+	background-position: center;
+
+	/* 정렬 */
+	z-index: 50;
+	position: absolute;
+}
+
+.A {
+	width: calc(100%/2);
+	height: calc(70vh/2);
+	background-color: whitesmoke;
+
+	background-image: url('space-a.jpeg');
+	background-repeat : no-repeat;
+	background-size : cover;
+	filter: grayscale(100%);
+
+	/* max */
+	max-width: calc(100%/2);
+	max-height: max-width;
+	/* 정렬 */
+	float: left;
+}
+
+.B {
+	width: calc(100%/2);
+	height: calc(70vh/2);
+	background-color: whitesmoke;
+	background-image: url('space-b.jpeg');
+	background-repeat : no-repeat;
+	background-size : cover;
+	filter: grayscale(100%);
+
+	/* max */
+	max-width: calc(100%/2);
+	max-height: max-width;
+	/* 정렬 */
+	float: left;
+}
+
+.P {
+	width:  calc(100%/2); 
+	float: left;
+	text-align: center;
+	color: black;
+}
+
+.P_small {
+	background-color: whitesmoke;
+	color: grey;
+	border-color: rgba(255, 255, 255, 0);
+	height: 180px;
+	line-height: 1.2rem;
+}
+
+.P_tech {
+	width:  calc(100%/2); 
+	float: left;
+	text-align: left;
+	border-color: rgba(255, 255, 255, 10);
+
+	height: 180px;
+	line-height: 1.2rem;
+	color: black;
+	background-color: whitesmoke;
+}
+
+
+/* ----- code colors ----- */
+.codes_background {
+	padding-left: 1rem;
+	font-size: 12px;
+	background-color: rgba(35,35,35,1);
+	overflow: auto;
+	overflow-x: auto;
+
+	background-image: url('title_1978.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: black;
+
+}
+.codes {
+	padding-left: 1rem;
+	font-size: 12px;
+	background-color: rgba(35,35,35,1);
+	overflow: auto;
+	overflow-x: auto;
+	color: grey;
+}
+.codes span{
+	font-size: 12px;
+}
+.code_bold {
+	font-weight: 700;
+}
+.code_white {
+	color: rgba(235,235,235,1);
+}
+.code1 {
+	font-weight: 700;
+}
+.code2 {
+	font-weight: 700;
+}
+.code3 {
+	color: rgba(235,235,235,1);
+}
+.code4 {
+	color: rgba(235,235,235,1);
+}
+.code5 {
+	color: rgba(235,235,235,1);
+}

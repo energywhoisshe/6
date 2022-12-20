@@ -4,21 +4,19 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MSQT KR</title>
+	<link rel="stylesheet" href="style.css?v=221215">
+
 	<style type="text/css">
-		* { 
-			
-		}
 		html {
-			font-family: 'Gothic A1', Helvetica, Arial, sans-serif;
-			font-size: 16px;
 			line-height: 1.4em;
-			word-break: keep-all;
 		}
 		body { 
 			text-align: center;
 			font-size: 1em; 
 			color: grey; 
 			padding: 1em;
+			max-width: 800px;
+			background-color: rgba(0, 0, 0, 0);
 		}
 		article {
 			margin: 1em;
@@ -39,15 +37,18 @@
 		button {
 			outline: 0;
 			border: 0;
+			background-color: rgba(235,235,235,1);
 			color: grey;
-
-			font-weight: bold;
+			font-size: 16px;
 			padding: 0.5em;
 			box-shadow: 1px 1px 1px 1px;
 			line-height: 4em;
 			width: 100%;
 		}
-		button:hover { font-style: italic; }
+		button:hover { 
+			background-color: rgba(35,35,35,1);
+			font-style: italic; 
+		}
 		figure {
 			box-sizing: 100px;
 		}
@@ -60,13 +61,14 @@
 			display: block;
 			margin: auto;
 		}
-		.info {
-			font-size: small;
-		}
 		.profile img{
 			width: 150px;
 		    height: 150px;
 			object-fit: cover;
+		}
+		.info {
+			font-size: small;
+			
 		}
 		.sns {
 
@@ -74,39 +76,48 @@
 		.sns img{
 			width: 30px;
 		}
+		.footer {
+			font-size: small;
+			line-height: 1.4em;
+		}
 
+		article p{
+			margin-top: 1.6rem;
+			margin-bottom: ;
+		}
 	</style>
 </head>
 <body>
 
 	<article>
-
+	<p>
 		<figure class="profile">
 		<img src="maldoror.png">
 		</figure>
-
-		<h1>Mosquitolarvajuice</h1>
-
+	</p>
+	<p>
 		<div class = "info">
 			<p>
 				<b>Mosquitolarvajuice</b> 30(Fri)/31(Sat) Dec. 2022
 				<br>Post Lesbian Opera ∞ Liquid Computation in Seoul
-				<br>Directed by Cha Yeonså
+				<br>Host by Cha Yeonså
 			</p>
 
 			<p>
 				<b>모스키토라바쥬스</b> 2022년 12월 30일(금)/31일(토)
 				<br>서울에서 <i>포스트 레즈비언 오페라 ∞ 리퀴드 컴퓨테이션</i>
-				<br>차연서 기획/연출/제작
+				<br>차연서 기획/연출/제작/개발
 			</p>
 		</div>
+	</p>
+	<p>
+		<!-- <a href="ko.html"><button>입장하기</li></button></a> -->
+		<a href="https://forms.gle/ag9bYBrqvVXTDaJRA"><button>예약하기</li></button></a>
+		<!-- <a href="en.html"><button>Enterance</li></button></a>
+		<a href="https://forms.gle/Qzkah9gHnVXG2XQS8"><button>Reservation</li></button></a> -->
+	</p>
 
-		
-			<!-- <a href=""><button>Program Booklet 프로그램북</li></button>
-			<a href=""><button>Reservation 예약</button></a>
-
-				<a href=""><button>Archive 아카이브</button></a>
- -->
+	<p>
 				<figure class="sns">
 					<a href="https://www.instagram.com/mosquito.kr/">
 						<img src="instagram.png">
@@ -114,23 +125,19 @@
 					<a href="https://www.facebook.com/mosquito.kr">
 						<img src="facebook.png">
 					</a>
-					<a href="https://twitter.com/mosquito_kr">
-						<img src="twitter.png">
+					<!-- <a href="https://twitter.com/mosquito_kr">
+						<img src="twitter.png"> -->
 					</a>
 					<a href="mailto:energywhoisshe@gmail.com?subject=MSQT.KR">
 						<img src="email.png">
 					</a>
 				</figure>
 
-			<p style = "font-size: smaller;">
-				<small>
-				This Website will be offically open on upcoming winter.
-				<br>본 웹사이트는 다가오는 겨울에 정식으로 오픈됩니다.
-				</small>
-			</p>
+	</p>
 
-			<p style = "font-size: smaller;">
-				<small>Cha Yeonså © 2022. All pictures cannot be copied without permission.</small>
+			<p class="footer">
+				<small>Cha Yeonså © 2022. <a href = "index.html">msqt.kr</a>
+					<br>All pictures cannot be copied without permission.</small>
 			</p>
 	</article>
 </body>
