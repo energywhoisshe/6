@@ -17,27 +17,37 @@
 	<script>
 		$(document).ready(function() {
 			var guide1 = [
-			/* 예시: Satre, 1940/1962, p.11*/
-			 '그때까지만 해도 나는 아직 완전한 사이보그가 되는 특권을 누리지 못하고 있었지만, 끊임없는 시도를 통해 나는 분명 완성체가 되어가고 있었다. 그리고 나는 혼자가 아니었다.(러셀, 2020/2022, p.15)',
+			// /* 예시: Satre, 1940/1962, p.11*/
+			//  '그때까지만 해도 나는 아직 완전한 사이보그가 되는 특권을 누리지 못하고 있었지만, 끊임없는 시도를 통해 나는 분명 완성체가 되어가고 있었다. 그리고 나는 혼자가 아니었다.(러셀, 2020/2022, p.15)',
 
-			 '틈새를 거닐며 우리는 위험한 데이터가 된다. 이 행복한 실패 속에서 우리는 현실을 재구성한다.(러셀, 2020/2022, p.86)',
+			 // '틈새를 거닐며 우리는 위험한 데이터가 된다. 이 행복한 실패 속에서 우리는 현실을 재구성한다.(러셀, 2020/2022, p.86)',
 
 			 '우리는 데이터를 오염시키고 싶다. 우리는 기계를 조져버리고 싶다.(러셀, p.155)',
 
-			 '퀴어 사람들, 유색인들, 여성과 동일시하는 사람들은 \'리믹스\'라는 개념과 지속적이고 역사적인 관계를 맺고 있다.(러셀, p.142)',
+			 // '퀴어 사람들, 유색인들, 여성과 동일시하는 사람들은 \'리믹스\'라는 개념과 지속적이고 역사적인 관계를 맺고 있다.(러셀, p.142)',
 
-			 '우리는 형태 변형이 요하는 용기를, 다른 자아들을 탐구하는 데서 오는 행복과 아픔을, 새로운 자아들을 발견하는 데서 발현하는 힘 모두 축복한다.(러셀, p.154)',
+			 // '우리는 형태 변형이 요하는 용기를, 다른 자아들을 탐구하는 데서 오는 행복과 아픔을, 새로운 자아들을 발견하는 데서 발현하는 힘 모두 축복한다.(러셀, p.154)',
 
-			 '모든 몸들은 전부 몸들이 될 수 있다.(러셀, 2020/2022, p.126)'
-			];
-
-			var guide2 = [
+			 // '모든 몸들은 전부 몸들이 될 수 있다.(러셀, 2020/2022, p.126)',
 
 			 '오늘부터, 너는 우리의 괴롭힘에서 해방되었다.(로트레아몽, 1869/2018, p.238)',
 
 			 '단명함이 죽음의 리허설이라면 위태로움은 삶을 유지하는 것이다. 단명함이 지속하지 않음을 의미한다면 위태로움은 \'현재 만들어지고 있는 것은 이미 몰락해버린 것\'임을 의미한다.(테일러, 2016/2021, p.102)',
 
 			 '빨리 아빠가 남자를 그만두고 바다가 될 수 있게 해야 해. 아빠는 바다를 사랑한다. 그래서 바다는 될 수 없다. (지영, 2022, p.210)'
+			];
+
+			var guide2 = [
+			 '손나리(1967 부산 출생, 서울에서 활동)는 삶에서 ‘시적인 것’을 찾아 시, 사랑, 죽음, 종교, 학문을 기웃거리다 명상과 에너지 힐링 그리고 퍼포먼스에 이르렀다.',
+			 '김금원(2000 광주 출생, 서울에서 활동)은 스무살부터 얼떨결에 모델 일을 시작하였다.',
+			 '영안(1996 제주 출생, 서울에서 활동)은 이름 붙이기 어려운 에너지를 순수한 상태 그대로 수신하고, 노래, 그림, 퍼포먼스 등으로 발산하려 한다.',
+			 '이상화(1994 서울 출생, 서울에서 활동)는 응급처치 프로토콜 기반의 창작활동을 해왔다. 확실한 신뢰를 줄 수 있는 약속, 규약 혹은 협약과도 같은 성실함과 순수함을 보여준다.',
+			 '양효실(1966 남원 출생,  서울에서 활동) 청소년, 여성, 퀴어 등등의 소수자성이 미적인 것을 통해 어떻게 구성되고 재전유되는 지에 관심을 갖고 비평, 번역, 글쓰기 등을 한다. 웃긴 텍스트를 강박적으로 찾아 웃으려고 하고 약한 것들 편에 서려고 요즘 동네 여자들 할머니들 사이에서 척추강화 요가를 시작했다.',
+			 '이미래(1988 서울 출생, 서울과 암스테르담에서 활동)는 기계 장치와 비계 등 산업적이고 기술적인 물질들이 가진 즉물성과 운동성을 탐구한다. 재료의 물성과 질감을 직접 손으로 만지는 행위를 통해 표현된 조각적 언어는 인간의 원초적 욕망과 감각의 세계를 환기시킨다.',
+			 '홍지영(1998 충주 출생, 서울에서 활동)은 사진을 주요매체로 활동하며, 신체를 기반으로 퀴어, 폭력, 섹슈얼리티를 연구한다. 보이지 않지만 실재하는 것들을 위해 셔터소리로 탑을 쌓고, 펜으로 비석을 새기고 있다.',
+			 '이재훈/Bernardino(1991년 서울 출생, 서울 및 전국에서 활동)는 Tito Schipa의 계보를 이어서 전통 벨칸토 성악을 기반으로 연주한다.',
+			 ''
+
 			];
 
 			var guide3 = [
@@ -66,91 +76,12 @@
 <header>
 	<a href = "index.html"><nav class = "title"></nav></a>
 
-	<nav class = "clock"></nav>
-	<a href="en.html"><nav class = "lan">En</nav></a>
+	<nav class = "clock" style="color:black"></nav>
+	<!-- <a href="en.html"><nav class = "lan">En</nav></a> -->
 </header>
 
 <!-- title -->
 <img src="title.jpg">
-
-<!-- info -->
-<article style="margin-top: 2em; padding-right: 1em;">
-<details>
-	<summary>예약 안내</summary>
-		<table>
-			<tr>
-				<td>일시</td>
-				<td>2022년 12월 30일 오전 11시
-					<br>
-				2022년 12월 31일 오전 11시
-				</td>
-			</tr>
-			<tr>
-				<td>지속 시간</td>
-				<td>약 1시간
-				</td>
-			</tr>
-			<tr>
-				<td>장소</td>
-				<td>
-				LES601 선유
-				</td> 
-			</tr>
-			<tr>
-				<td>관객 인원</td>
-				<td>
-					회차당 최대 80인
-				</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>
-					천장 아래 / 하늘 아래 - 두 개의 방을 오가며 자유 관람
-				</td>
-			</tr>
-			<tr>
-				<td>𒀁</td>
-				<td>
-					<a href="https://forms.gle/3W6BsjPzSviyEUsf9">예약하기</a>
-				</td>
-			</tr>
-		</table>
-</details>
-
-<details>
-	<summary>찾아오는 길</summary>
-	<table>
-			<tr>
-			  <td>주소</td>
-			  <td>
-			  	서울 영등포구 양평로22마길 2, 1층
-			  </td>
-			</tr>
-
-			<tr>
-				<td>도보</td>
-				<td>
-					선유도역 2번 출구에서 도보8분
-				</td>
-			</tr>
-
-			<tr>
-				<td>주차</td>
-				<td>
-					코오롱디지털타워 지하주차장
-					<br>서울시 영등포구 양평동5가 106-1 (1시간 3,000원)
-				</td>
-			</tr>
-
-			<tr>
-				<td>상세 안내</td>
-				<td>
-					Les601 선유는 2022년 8월에 개관한 포토스튜디오입니다. 양평로22마길 초입에 위치해있으며 같은 골목에 자동차정비소, 드라이아이스업체, 목재소, 그리고 미술공간 Hall 1이 위치해있습니다.
-				</td>
-			</tr>
-		</table>
-</article>
-</details>
 
 
 </div>
@@ -162,53 +93,49 @@
 				<p style = "margin-bottom: 2em; color: black;">
 					'말도로르'가 6개의 입술을 삽입하는 곳에서, 에테르 차원과 잠시간 중첩되는 두 겹의 바닥에 사치스러운 햇살이 기운다. 여기, '여느 날 여느 때의 아침을, 죽어서 맞는' 몸들. 그들은 무던히 창작을 경작하던 농부들이다.
 					<br><br>
-					'끝이 없는 집'은 딸의 에너지 혈류를 짚는 생어머니의 몸짓에 느즈막히 정각을 알리는 오래된 뻐꾸기 시계처럼 신음한다. 그가 수직이 된 것은 다만 매달려 있기 때문이다. 소생을 거부하는 몸들이 박치의 메트로놈으로 음감을 맞추니, 요정의 외피를 쓴 작은 모터 마냥 예정된 방전을 향해 진동한다. 텅 빈 엄마와 거짓말 하는 딸, 낫을 든 천사와 헐벗은 소방대원은 기버(Giver)의 체위로 헌신한다.
+					'끝이 없는 집'은 딸의 에너지 혈류를 짚는 생어머니의 몸짓에 느즈막히 정각을 알리는 오래된 뻐꾸기 시계처럼 경련한다. 그가 수직이 된 것은 다만 매달려 있기 때문이다. 소생을 거부하는 몸들이 박치의 메트로놈으로 음감을 맞추니, 요정의 외피를 쓴 작은 모터 마냥 예정된 방전을 향해 진동한다. 텅 빈 엄마와 거짓말 하는 딸, 낫을 든 천사와 헐벗은 소방대원은 기버(Giver)의 체위로 헌신한다.
 					<br><br>
 					모든 것이 끝나고 망해버린, 그러니까 생사로부터 해방된 현장은 해체된 사랑의 오페라로서 잠시간 조직된다. 에널 플러그처럼 굴곡진 유충들의 호흡관으로 담궈낸 알코올은 초대된 이들 사이를 유동한다. 마비된 눈꺼풀이 무거워지고, 구역감이 들고, 단말마조차 허용되지 않도록 도핑된 에테르 칵테일. 매캐한 목넘김, 이 비린내 나는 잔. 붓고 편향된 눈을 감고 자랑스럽게 음미해보는, '이 기막힌 잠'….
 					<br><br>
-					일몰에도 선명한 오전 찰나의 직광처럼, 에너지는 손상되지 않는다는 믿음처럼, 시차를 두고 돌아온 사건들의 잔여물을 회수하고 너덜너덜한 신경의 숨겨진 주소들에 협박문을 반송하라. 과로한 몽유병자들은 이제 위태로웠던 몰입의 순간들을 부검대 위에 올린다.
+					일몰에도 선명한 오전 찰나의 직광처럼, 에너지는 손상되지 않는다는 믿음처럼, 시차를 두고 돌아온 사건들의 잔여물을 회수하고 너덜너덜한 신경의 숨겨진 주소들에 협박문을 반송하라. 과로한 몽유병자들은 이제 위태로웠던 몰입의 순간들을 부검대 위에 올린다. 
 					<br><br>
-				</p>
 
-
-				
-				<p style = "margin-bottom: 2em;">
-					<ol type="a">
-						<li>김언희, 【여느 날, 여느 아침을, 현대문학 2019.7】, 2019</li>
+				<p style = "margin-bottom: 2em; color:black;">
+					<ol type="a" style = "color:black;">
+						<li>김언희 Kim Eon Hee, 【여느 날, 여느 아침을】, 2019 (현대문학 2019.7)</li>
 						<li>시빌 루퍼트 Sibylle Ruppert, 【말도로르의 노래 Les Chant de Maldoror, 105 x 85cm, 1978</li>
 						<li>이미래, 【끝이 없는 집 Endless House: Holes and Drops】, multiple ceramic sculptures on a scaffold, lithium carbonate and iron oxide glaze liquid, pump, motor and other mixed media, 2022 베니스 비엔날레 '꿈의 우유 The Milk of Dreams' 본관에 설치, 2022</li>
-						<li>차연서, '끝이 없는 집' 게임 엔진에 버츄얼  라이브 시뮬레이션, 모델링 김영광, 2022</li>
-
+						<li>실비아 플라스 Sylvia Plath, 【레이디 라자러스 Lady Lazarus】, 1965/2022(손나리 역)</li>
+						<li>아글라야 페터라니 Aglaja Veteranyi, 【아이는 왜 폴란타 속에서 끓는가 Warum das Kind in der Polenta Kocht】’, 1999/2021(배수아 역)</li>
+						<li>가에타노 도니체티 Gaetano Donizetti, 【아름다운 소리 Il Dolce Suono】, 오페라 '람모르무어의 루치아 Lucia di Lammermoor', 1835</li>
+						<li>가에티노 도니체티 Gaetano Donizetti, 【남 몰래 흐르는 눈물 Una Furtiva Lagrima】 (오페라 '사랑의 묘약 L'elisir d'amore'), 1832</li>
+						<li>에릭 세라 Éric Serra, 【디바댄스 The Diva Dance】, 영화 '제 5원소 Le Cinquième élément', 1997</li>
 						<br>
-						<li>김금원, '모스키토라바쥬스' 공연 시작 안내, 2022</li>
-						<li>손나리, '라자러스, 내 가슴에 달라붙은 작은 주머니 쥐' 에너지 힐링, 김금원과 라이브 퍼포먼스, 2021/2022</li>
-						
+
 						<li>영안, 【밀과 보리가 자라네】 (원곡 작사 미상 번안 동요), 편곡, 연주와 노래, 2022</li>
 						<li>영안, 【해가 떠오르네】, 작곡, 연주와 노래, 2022</li>
 						<li>영안, 【진정제 아기천사】, 작곡, 노래, 2022</li>
 						<li>영안, 【슬픈 자들의 목을 쳐】 (부분 인용 Erich Fried 'Die Maßnahmen(조치), 1957), 작곡, 연주와 노래, 2022</li>
 						<li>영안, 【천사】, 작곡, 연주와 노래, 2022</li>
 						<li>영안, 【어서 집으로 돌아오렴】, 작곡, 전자음악과 노래, 2022</li>
-						<li>이상화, '말도로르의 성배' 라이브 퍼포먼스, 모델링 및 금속 제작 김영광, 2022</li>
+						<li>백상, 화재대응능력2급 '공기호흡기 장착 및 비상호흡법', 라이브 퍼포먼스, 2017/2022</li>
+						<li>백상, 화재대응능력2급 '요구조자 검색 및 구조', 영안과 라이브 퍼포먼스, 2017/2022</li>
+						<li>백상, 화재대응능력2급 '소방호스 전개 및 회수', 라이브 퍼포먼스, 2017/2022</li>
 
 						<br>
-						<li>실비아 플라스, 【라자러스 부인 Lady Lazarus】, 1965</li>
-						<li>손나리, '라자러스 부인' 시 번역 및 한/영 낭독, 라이브 퍼포먼스,2022</li>
-						<li>가에타노 도니체티, 【아름다운 소리 Il Dolce Suono】, 오페라 '람모르무어의 루치아 Lucia di Lammermoor', 1835</li>
-						<li>에릭 세라, 【디바댄스 The Diva Dance】, 영화 '제 5원소(Le Cinquième élément)', 1997</li>
 
-						<li>이상화, 화재대응능력2급 '공기호흡기 장착 및 비상호흡법', 라이브 퍼포먼스, 2017/2022</li>
-						<li>이상화, 화재대응능력2급 '요구조자 검색 및 구조', 영안과 라이브 퍼포먼스, 2017/2022</li>
-						<li>이상화, 화재대응능력2급 '소방호스 전개 및 회수', 라이브 퍼포먼스, 2017/2022</li>
-						<li>이상화, '디바댄스' 편곡 및 이재훈/베르나디노 음성으로 가상 악기 보컬 제작, 2022</li>
-						<li>가에티노 도니체티, 【남 몰래 흐르는 눈물 Una Furtiva Lagrima】 (오페라 '사랑의 묘약 L'elisir d'amore'), 1832</li>
-						<li>이재훈/베르나디노, '남 몰래 흐르는 눈물' 성악 실연, 2022</li>
+						<li>게임엔진 시뮬레이션(Unity)
+						<li>스크리닝(LED Panel 2m*4.5m, SamSung, LG)</li>
+						<li>센서 시스템(Perception Neuron, Kinect, Velodyne Lidar)</li>
+						<li>사운드 시스템(Logic, Presonar, GnS, Shure, KLOTZ, KORG)</li>
+
 						<br>
 
-						<li>양효실, 한국예술종합학교에서 '미술과 문화' 비대면 강의, 2020</li>
-						<li>양효실, 모스키토라바쥬스에서 비대면 강의, 버츄얼 렉쳐 퍼포먼스, 2020/2022</li>
-						<li>홍지영, 【물의 시간들】, 148쪽, 165*260mm, 281g, 보스토크프레스, 2022</li>
-						<li>홍지영, 관객 동선 안내와 사진 기록, 소형/중형 필름 및 디지털 카메라, 2022</li>
+						<li>기획/제작/연출/개발: 차연서(호스트) 이상화(어시스턴트 호스트)</li>
+						<li>퍼포머: 손나리(엄마) 김금원(딸) 영안(노래) 백상(전자음악) 홍지영(사진) Bernardino(테너)</li>
+						<li>버츄얼 바디: 이미래(암스테르담에서)</li>
+						<li>버츄얼 렉쳐: 양효실(서울에서)</li>
+						<li>Mosquitolarvajuice 2022</li>
 					</ol>
 				</p>
 
@@ -228,124 +155,7 @@
 </div>
 
 	<article>
-		<div class = "P">
-				<p>
-					천장 아래 
-					<br>나리와 금원의 몸
-				</p>
-				<p>
-					<button class = "P_small">손나리(1967 부산 출생, 서울에서 활동)는 삶에서 ‘시적인 것’을 찾아 시, 사랑, 죽음, 종교, 학문을 기웃거리다 명상과 에너지 힐링 그리고 퍼포먼스에 이르렀다.</button>
-				</p>
-				<p>
-					<button class = "P_small">김금원(2000 광주 출생, 서울에서 활동)은 스무살부터 얼떨결에 모델 일을 시작하였다.</button>
-				</p>
-		</div>
-		<div class = "P">
-				<p>
-					하늘 아래 
-					<br>혜령과 상화의 몸
-				</p>
-				<p>
-					<button class = "P_small">영안(1996 제주 출생, 서울에서 활동)은 이름 붙이기 어려운 에너지를 순수한 상태 그대로 수신하고, 노래, 그림, 퍼포먼스 등으로 발산하려 한다.</button>
-				</p>
-				<p>
-					<button class = "P_small">이상화(1994 서울 출생, 서울에서 활동)는 응급처치 프로토콜 기반의 창작활동을 해왔다. 확실한 신뢰를 줄 수 있는 약속, 규약 혹은 협약과도 같은 성실함과 순수함을 보여준다.</button>
-				</p>
-		</div>
-
-		<div class = "P">
-			<p>
-				뎁스카메라<small>Depth Camera</small>에
-				<br>효실의 강의
-			</p>
-			<p>
-				<button class = "P_small">양효실(1966 남원 출생,  서울에서 활동) 청소년, 여성, 퀴어 등등의 소수자성이 미적인 것을 통해 어떻게 구성되고 재전유되는 지에 관심을 갖고 비평, 번역, 글쓰기 등을 한다. 웃긴 텍스트를 강박적으로 찾아 웃으려고 하고 약한 것들 편에 서려고 요즘 동네 여자들 할머니들 사이에서 척추강화 요가를 시작했다.</button>
-			</p>
-		</div>
-
-		<div class = "P">
-			<p>
-				게임엔진<small>Game Engine</small>에
-				<br>미래의 조각
-			</p>
-			<p>
-				<button class = "P_small">이미래(1988 서울 출생, 서울과 암스테르담에서 활동)는 기계 장치와 비계 등 산업적이고 기술적인 물질들이 가진 즉물성과 운동성을 탐구한다. 재료의 물성과 질감을 직접 손으로 만지는 행위를 통해 표현된 조각적 언어는 인간의 원초적 욕망과 감각의 세계를 환기시킨다.</button>
-			</p>
-		</div>
-
-		<div class = "P">
-			<p>
-				여기저기에 
-				<br>지영의 몸
-			</p>
-			<p>
-				<button class = "P_small">홍지영(1998 충주 출생, 서울에서 활동)은 사진을 주요매체로 활동하며, 신체를 기반으로 퀴어, 폭력, 섹슈얼리티를 연구한다. 보이지 않지만 실재하는 것들을 위해 셔터소리로 탑을 쌓고, 펜으로 비석을 새기고 있다.</button>
-			</p>
-		</div>
-
-		<div class = "P">
-			<p>
-				다른 곳에
-				<br>재훈의 몸
-			</p>
-			<p>
-				<button class = "P_small">이재훈/Bernardino(1991년 서울 출생, 서울 및 전국에서 활동)는 Tito Schipa의 계보를 이어서 전통 벨칸토 성악을 기반으로 연주한다.</button>
-			</p>
-		</div>
-
-		<div class = "P" style="width: 100%;">
-			<p>
-				그 사이사이로 연서의 몸
-			</p>
-				<p>
-					<button class = "P_small">차연서(1997년 서울 출생, 서울에서 활동)는 일탈적 존재 안에 생존하는 다중적 몸과 마음, 에너지 등의 개별적인 성숙도와 연결망을 관찰하고, 그들이 서로 돌보게 하는 라이브 시뮬레이션을 설계한다. </button>
-				</p>
-		</div>
-
-		<button class ="P_tech" style = "width: 100%;">
-			<p>
-				<ol type = "i">
-					<li>모션캡쳐 수트(Perception Neuron)</li>
-					<li>전자 오르간(Yamaha)과 전자 오케스트라(Logic)</li>
-					<li>단초점 빔 프로젝터(LG)에 뎁스카메라(Kinect)</li>
-					<li>LED 패널 스크리닝(2m*4.5m)에 게임엔진(Unity)</li>
-					<li>센서 시스템(Velodyne Lidar)</li>
-					<li>사운드 시스템(Presonar, GnS, Shure, KLOTZ, KORG)</li>
-					<li>필름카메라(Canon, Mamiya, Koniflex)와 흑백필름(Kodak)</li>
-				</ol>
-			</p>
-		</button>
-
-		<!-- <button class ="P_tech">
-			<p>
-				모션캡쳐 수트(Perception Neuron)
-			</p>
-			<p>
-				단초점 빔 프로젝터(LG)에 뎁스카메라(Kinect)
-			</p>
-		</button>
-
-		<button class ="P_tech">
-			<p>
-				전자 오르간(Yamaha)과 전자 오케스트라(Logic)
-			</p>
-			<p>
-				LED 패널 스크리닝(2m*4.5m)에 게임엔진(Unity)
-			</p>
-		</button>
-
-		<button class ="P_tech" style = "width: 100%;">
-			<p>
-				센서 시스템(Velodyne Lidar)
-			</p>
-			<p>
-				사운드 시스템(Presonar, GnS, Shure, KLOTZ)
-			</p>
-			<p>
-				필름카메라(Canon, Mamiya, Koniflex)와 흑백필름(Kodak)
-			</p>
-		</button> -->
-
+		
 	</article>
 
 </article>
@@ -355,53 +165,60 @@
 
 <article>
 <p>
-	<div class="codes_background">
-		<span class="code_bold">void Awake</span>()
-		<br>{
-			<p class="codes">
-				Debug.<span class="code_bold">Log</span>(<span class="code_white">"Post 🅛esbian Opera, 🅛iquid Computation, 🅛ive Performance"</span>);
-				<br>
-				<br><span class="code_bold">One</span>();
-				<br><span class="code_bold">Two</span>();
-				<br><span class="code_bold">CurtainCall</span>();
-				<br>
-				<br><span class="code1">print</span> (guide_random);</dd>
-				<br><span class="code2">if</span> (guide_int == <span class="code3">0</span>)
-				{
-					guide_random = <span class="code4">"여느 날 여느 때의 아침을 | 나리 금원"</span>;
-				}
-				<br><span class="code2">if</span> (guide_int == <span class="code3">1</span>)
-				{
-					guide_random = <span class="code4">"죽어서 맞는다는 거 | 영안 상화"</span>;
-				}
-				<br><span class="code2">if</span> (guide_int == <span class="code3">2</span>)
-				{
-					guide_random = <span class="code4">"끝이 없는 집 | 미래"</span>;
-				}
-
-				<br><span class="code2">if</span> (guide_int == <span class="code3">3</span>)
-				{
-					guide_random = <span class="code4">"말도로르의 노래 | 재훈"</span>;
-				}
-
-				<br><span class="code2">if</span> (guide_int == <span class="code3">4</span>)
-				{
-					guide_random = <span class="code4">"어처구니없는 삶으로부터도 | 효실"</span>;
-				}
-
-				<br><span class="code2">if</span> (guide_int == <span class="code3">5</span>)
-				{
-					guide_random = <span class="code4">"어처구니없는 죽음으로부터도 | 지영"</span>;
-				}
-
-				<br><span class="code2">if</span> (guide_int == <span class="code3">6</span>)
-				{
-					guide_random = <span class="code4">"라자러스, 내 넥타이뼈에 매달린 작은 서커스 쥐 | 연서"</span>;
-				}
-			<br>
-		</p>}
-		</div>
+	
 </p>
+		<details>
+			<summary>프로젝트 안내</summary>
+				<p>
+					<dt>Mosquitolarvajuice 모스키토라바쥬스</dt>
+				</p>
+				<p>
+					<dt>날짜와 시간</dt>
+					<dd>
+						<li>1회차 2022.12.30(금) 오전 11시</li>
+						<li>2회차 2022.12.31(토) 오전 11시</li>
+						<li>1부, 2부, 커튼콜 - 약 1시간</li>
+					</dd>
+				</p>
+				<p>
+					<dt>찾아오는 길</dt>
+					<dd>
+						<li>LES601 선유</li>
+						<li>영등포구 양평로22마길 2, (107-3) 1층(양평동5가)</li>
+						<li>도보: 선유도역 2번 출구에서 도보8분</li>
+						<li>주차: 코오롱디지털타워 지하주차장(1시간 3,000원)</li>
+						<li>인근 건물: Les601 선유는 2022년 8월에 개관한 포토스튜디오입니다. 양평로22마길 초입에 위치해있으며 같은 골목에 자동차정비소, 드라이아이스업체, 목재소, 그리고 미술공간 Hall 1이 위치해있습니다.</li>
+					</dd>
+				</p>
+				<p>
+					<dt>관객 인원 및 동선</dt>
+					<dd>
+						<li>회차당 최대 80인</li>
+						<li>천장 아래 / 하늘 아래 - 두 개의 방을 오가며 자유 관람</li>
+					</dd>
+					
+				</p>
+				<p>
+					<dt>입장료</dt>
+					<dd>
+						<li>자율기부 - 하나은행 24991019337007 차연서</li>
+						<li>모스키토라바쥬스 1 온스(30ml)가 담긴 스트레이트 잔 포함</li>
+						<li>모스키토라바쥬스의 프로젝트 로고가 각인된 스텐 칵테일 지거를 관객용 잔으로 사용합니다. 공연이 끝난 후 기념품으로 가져가세요.</li>
+					</dd>
+					
+				</p>
+				<p>
+					<dt>문의</dt>
+					<dd>
+						<li>energywhoisshe@gmail.com</li>
+						<li>instagram.com/msqt.kr</li>
+						<li>msqk.kr</li>
+						<li>입장 및 관람에 도움이 필요한 경우 및 그 외 필요한 문의는 주최 측으로 연락바랍니다.</li>
+						<li>주최/주관 차연서</li>
+						<li>후원 서울특별시, 서울문화재단 2022 Unfold X</li>
+					</dd>
+				</p>
+		</details>
 
 		<details>
 			<summary>포스트 레즈비언 오페라, 리퀴드 컴퓨테이션</summary>
@@ -431,20 +248,20 @@
 				<p>
 				<dt>출연/출현/연출</dt>
 					<dd>
-						<button>퍼포머 | 손나리 김금원 오혜령 이상화 홍지영 이재훈</button>
+						<button>퍼포머 | 손나리 김금원 영안 백상 홍지영 베르나디노</button>
 						<br>회복세션 연출 | 손나리 차연서
-						<br>자장가세션 연출 | 오혜령 차연서
-						<br>소생거부세션 연출 | 이상화 차연서
+						<br>자장가세션 연출 | 영안 차연서
+						<br>소생거부세션 연출 | 백상 차연서
 					</dd>
 
 					<dd>
 						<br><button>영시 원작 | 실비아 플라스</button>
 						<br><button>영시 변용 협력 | 정은숙(마음산책), Plath Estate</button>
 						<br>영시 번역 및 한/영 낭독 | 손나리
-						<br>커미션곡 편곡 실연 및 창작곡 셋리스트 | 영안/오혜령
-						<br>커미션곡 성악 실연 | 이재훈
+						<br>커미션곡 편곡 실연 및 창작곡 셋리스트 | 영안
+						<br>커미션곡 성악 실연 | 베르나디노
 						<br>자장자세션에 음성치료 진행 | 이재훈
-						<br><button>드랙세션에 퍼포먼스 자문 | 이수/미년</button>
+						<br><button>소생거부세션에 퍼포먼스 자문 | Isu Mignon Mignonne</button>
 					</dd>
 				</p>
 
@@ -454,7 +271,7 @@
 						<button>티켓 및 음료 부스 | 안현진 이솔엽</button>
 						<br>흑백필름 사진 기록 | 홍지영
 						<br>라이다 센서 기록 | 차연서
-						<br>무빙이미지 및 사운드 기록 | ??
+						<br>영상 및 소리 기록 | 박태영
 						<br>
 						<br>음향 시스템 | 이상화 차연서
 						<br>센서 시스템 | 차연서 이상화
@@ -477,7 +294,7 @@
 						<button>공간디자인 | NACA/김혜정</button>
 						<br><button>금속디자인 및 3D 스컬핑 | 김영광</button>
 						<br>게임엔진 시뮬레이션 개발 | 차연서
-						<br>MoCap 연동 개발  | 차연서 이상화
+						<br>센서 연동 개발  | 차연서 이상화
 				</dd>
 			</p>
 
@@ -490,20 +307,21 @@
 							<ol>
 								<li>레거시 러셀, 다연 옮김, 『글리치 페미니즘 선언』, 미디어버스, 2022</li>
 								<li>다이애나 테일러, 용선미 옮김, 『퍼포먼스 퍼포먼스』, 나선프레스, 2021</li>
-								<li>줄리아 브라이언 윌슨, 신현진 옮김, 『미술노동자』, 열화당, 2021</li>
+								<!-- 
+								<li>줄리아 브라이언 윌슨, 신현진 옮김, 『미술노동자』, 열화당, 2021</li> -->
 								<li>로트레아몽, 황현산 옮김, 『말도로르의 노래』, 문학동네, 2018</li>
-								<li>지영, 『지영』, 2022</li>
+								<li>지영, 『지영』, 주로출판사, 2022</li>
 							</ol>
 						<br>서문 | 차연서
 						<br><button>그래픽 디자인 | 인현진</button>
-						<br><button>번역 | 류다연</button>
+						<br><button>웹페이지 번역 | 다연</button>
 				</dd>
 			</p>
 
 			<p>
 				<dt>기획/진행</dt>
 				<dd>
-					<br>기획/제작/연출 | 차연서
+					기획/제작/연출 | 차연서
 					<br>조연출/PM/예산 | 이상화
 					<br>의상/기술/장비 | 차연서 이상화
 					<br><button>선정 사업명 | 2022 Unfold X 기획자캠프</button>
@@ -520,7 +338,7 @@
 </article>
 
 
-<a onClick="window.location.reload()" style="cursor: pointer;"><marquee class = "signage3"></marquee></a>
+<!-- <a onClick="window.location.reload()" style="cursor: pointer;"><marquee class = "signage3"></marquee></a> -->
 
 <figure>
 	<img src="mosquitolarvajuice.png" style="width: 100px;">
@@ -574,10 +392,10 @@
 
 
 
-<footer>
+<footer style="color:black">
 	차연서 © 2022. <a href = "index.html">msqt.kr</a>
 	<p>
-		마지막 업데이트 2022.12.15
+		전체 크레딧은 공연 후 한번 더 확인 업데이트됩니다. 마지막 업데이트 2022.12.15
 
 	</p>
 </footer>
