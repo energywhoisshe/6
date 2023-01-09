@@ -1,10 +1,10 @@
-<!DO악TYPE html>
+<!DOCTYPE html>
 <html>
-<head lang="en">
+<head lang="ko">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Cha Yeonså">
-	<title>Mosquitolarvajuice</title>
+	<title>모스키토라바쥬스</title>
 	<link rel="stylesheet" href="style.css?v=221215">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,46 +16,62 @@
 	</style>
 	<script>
 		$(document).ready(function() {
-			var guide1 = [
-			/* 예시: Satre, 1940/1962, p.11*/
-			 '그때까지만 해도 나는 아직 완전한 사이보그가 되는 특권을 누리지 못하고 있었지만, 끊임없는 시도를 통해 나는 분명 완성체가 되어가고 있었다. 그리고 나는 혼자가 아니었다.(러셀, 2020/2022, p.15)',
+			var guide1_en = [
+			// /* 예시: Satre, 1940/1962, p.11*/
+			//  ‘I was not yet privileged enough to be fully formed as cyborg but, in reaching, surely on my way. And I was not alone. (Russell, 2020, p.4)',
 
-			 '틈새를 거닐며 우리는 위험한 데이터가 된다. 이 행복한 실패 속에서 우리는 현실을 재구성한다.(러셀, 2020/2022, p.86)',
+			 // ‘Wandering in-between, we become dangerous data. In this happy failure, we reconstitute reality. (Russell, 2020, p.75)',
 
-			 '우리는 데이터를 오염시키고 싶다. 우리는 기계를 조져버리고 싶다.(러셀, p.155)',
+			 'We want to corrupt data. We want to fuck up the machine.(Russell, 2020, p.148)',
 
-			 '퀴어 사람들, 유색인들, 여성과 동일시하는 사람들은 \'리믹스\'라는 개념과 지속적이고 역사적인 관계를 맺고 있다.(러셀, p.142)',
+			 // 'Queer people, people of color, and female-identifying people have an enduring and historical relationship to the notion of “remix.” (Russell, 2020, p.133)',
 
-			 '우리는 형태 변형이 요하는 용기를, 다른 자아들을 탐구하는 데서 오는 행복과 아픔을, 새로운 자아들을 발견하는 데서 발현하는 힘 모두 축복한다.(러셀, p.154)',
+			 // 'We celebrate the courage it takes to change form, the joy and pain that can come with exploring different selves, and the power that comes from finding new selves.(Russell, 2020, p.146)',
 
-			 '모든 몸들은 전부 몸들이 될 수 있다.(러셀, 2020/2022, p.126)'
+			 'ALL BODIES CAN BE EVERY-BODY.(Russell, 2020, p.117)',
+
+			 'From today, you are delivered from our persecution.(Lautréamont, 1869/1943, 253)',
+
+			 'If ephemerality is the rehearsal for death, precarity is what sustains life. If ephemerality signifies un-lasting, precarity signifies \‘that which is currently being made is that which has already fallen\’. (Taylor, 2016, p.102)',
+
+			 'I need to quickly make my dad quit being a man and become the ocean. Dad loves the ocean. And so, he cannot become the ocean. (Jiyoung, 2022, p.210)'
 			];
 
-			var guide2 = [
 
-			 '오늘부터, 너는 우리의 괴롭힘에서 해방되었다.(로트레아몽, 1869/2018, p.238)',
+			var guide2_en = [
 
-			 '단명함이 죽음의 리허설이라면 위태로움은 삶을 유지하는 것이다. 단명함이 지속하지 않음을 의미한다면 위태로움은 \'현재 만들어지고 있는 것은 이미 몰락해버린 것\'임을 의미한다.(테일러, 2016/2021, p.102)',
 
-			 '빨리 아빠가 남자를 그만두고 바다가 될 수 있게 해야 해. 아빠는 바다를 사랑한다. 그래서 바다는 될 수 없다. (지영, 2022, p.210)'
+			 'Nari Sohn (b. 1967 in Busan, Lives and works in Seoul) seeks ‘the poetical’ in life. Having delved into poetry, love, death, religion, and academia, she is now exploring meditation, energy healing, and performance.',
+
+			 '김금원(2000 광주 출생, 서울에서 활동)은 스무살부터 얼떨결에 모델 일을 시작하였다.',
+
+			 'YoungAn (b. 1996 in Jeju, Lives and works in Seoul) aims to receive the unnamed energy in its pure form and release it through music, drawings, performance etc.',
+
+			 'BaekSang (1994 서울 출생, 서울에서 활동)는 응급처치 프로토콜 기반의 창작활동을 해왔다. 확실한 신뢰를 줄 수 있는 약속, 규약 혹은 협약과도 같은 성실함과 순수함을 보여준다.',
+
+			 '양효실(1966 남원 출생,  서울에서 활동) 청소년, 여성, 퀴어 등등의 소수자성이 미적인 것을 통해 어떻게 구성되고 재전유되는 지에 관심을 갖고 비평, 번역, 글쓰기 등을 한다. 웃긴 텍스트를 강박적으로 찾아 웃으려고 하고 약한 것들 편에 서려고 요즘 동네 여자들 할머니들 사이에서 척추강화 요가를 시작했다.',
+
+			 'Mire Lee (b. 1998 in Seoul, Lives and works in Amsterdam) pursues an experimental aesthetic as she explores the matter-of-factness and dynamics of industrial and technical materials, including machinery and scaffolds. Expressed through the act of working the materials’ physical aspects and textures by hand, her sculptural language evokes primal human desires and the sensory world.',
+
+			 '홍지영(1998 충주 출생, 서울에서 활동)은 사진을 주요매체로 활동하며, 신체를 기반으로 퀴어, 폭력, 섹슈얼리티를 연구한다. 보이지 않지만 실재하는 것들을 위해 셔터소리로 탑을 쌓고, 펜으로 비석을 새기고 있다.',
+
+			 'Bernardino Lee(1991년 서울 출생, 서울 및 전국에서 활동)는 Tito Schipa의 계보를 이어서 전통 벨칸토 성악을 기반으로 연주한다.',
+
+			 'Cha Yeonså (b. 1997 in Seoul, Lives and works in Seoul, Republic of Korea) is interested in observing each maturity and network between multiple bodies, minds and energies that survives inside deviant existances. As the best fiction to make them care each other, live simulation games, videos, performances and writings have been shown through online / offline installation.'
 			];
 
-			var guide3 = [
-			 '삽입할 수 있는 건 오로지 나와 동일한 당신 뿐 / 당신의 그 편향된 눈은 평화롭기 때문에 / 당신의 부은 눈이 자랑스럽기 때문에(Juicy Mosquito, 2020)',
-			 '모기가 나에게 그의 여섯 개의 입술을 삽입하는 순간 우리는 / 잠시간 레즈비언 관계가 되는 거죠.(Juicy Mosquito, 2020)',
-			 '철저히 분리되거나 용서를 논하는 것이 아닌 다른 방식의 연결, /  그리고 이별에 대한 다른 방식의 / 기념(3 Households, 2021)',
-			 '스스로의 신체를 멀리서 바라보는 것 / 또한 그 신체의 감각을 외부로도 내부로도 통과해내는 것 / 그것의 질감, 질량, 그리고 연결된 모든 실의 엉킴, 얽힘, 채널, 차원, 가장 높은 에너지(3 Households, 2021)',
-			 '수치심은 가장 낮은 파동의 마음 상태라고 한다. 재난 현장에서 비위가 약한 사람에게는 아주 멋진 소화기가 필요하다.(Mosquitojuice, 2022)',
-			 '\“우리가 살아있고 창조의 바로 한가운데에 있다고 느낄 때, 사랑은 경이로운 것이 될 수 있어.” “세상의 모든 모기들도 똑같이 느낄거야.\” \“그것 참 모기들에게 좋은 일이구나.\”(Mosquitojuice, 2022)'
+			var guide3_en = [
+			 'The moment the mosquito penetrates its six lips in me, we / briefly become a lesbian relationship. (Juicy Mosquito, 2020)',
+			 '\“When we feel alive and centered in our creation, love can be a wonderful thing.” “All mosquitos in the world will also feel the same way.\” \“That surely is good for the mosquitos.\”(Mosquitojuice, 2022)'
 			];
 
-			var number = Math.floor(Math.random() * guide1.length);
-			var number2 = Math.floor(Math.random() * guide2.length);
-			var number3 = Math.floor(Math.random() * guide3.length);
+			var number_en = Math.floor(Math.random() * guide1_en.length);
+			var number2_en = Math.floor(Math.random() * guide2_en.length);
+			var number3_en = Math.floor(Math.random() * guide3_en.length);
 
-			$('.signage').text(guide1[number]);
-			$('.signage2').text(guide2[number2]);
-			$('.signage3').text(guide3[number3]);
+			$('.signage').text(guide1_en[number_en]);
+			$('.signage2').text(guide2_en[number2_en]);
+			$('.signage3').text(guide3_en[number3_en]);
 		});
 	</script>
 </head>
@@ -70,88 +86,12 @@
 <header>
 	<a href = "index.html"><nav class = "title"></nav></a>
 
-	<nav class = "clock"></nav>
-	<a href="ko.html"><nav class = "lan">Ko</nav></a>
+	<nav class = "clock" style="color:black"></nav>
+	<a href="en.html"><nav class = "lan">한국어</nav></a>
 </header>
 
-<!-- info -->
-<article style="margin-top: 2em; padding-right: 1em;">
-<details>
-	<summary>Reservation Info</summary>
-		<table>
-			<tr>
-				<td>Date and Time</td>
-				<td>30 DEC 2022, 4 PM
-					<br>
-				31 DEC 2022, 4 PM
-				</td>
-			</tr>
-			<tr>
-				<td>Duration</td>
-				<td>About 1 Hour
-				</td>
-			</tr>
-			<tr>
-				<td>장소</td>
-				<td>
-				Les601 선유
-				</td> 
-			</tr>
-			<tr>
-				<td>관객 인원</td>
-				<td>
-					회차당 80인
-				</td>
-			</tr>
-			<tr>
-				<td></td>
-				<td>
-					A룸 40인, B룸 40인, 지정된 방에서 출발하여 자유 관람
-				</td>
-			</tr>
-			<tr>
-				<td>𒀁</td>
-				<td>
-					<a href="https://forms.gle/Qzkah9gHnVXG2XQS8">Reservation</a>
-				</td>
-			</tr>
-		</table>
-</details>
-
-<details>
-	<summary>Way to Come</summary>
-	<table>
-			<tr>
-			  <td>Adress</td>
-			  <td>
-			  	서울 영등포구 양평로22마길 2, 1층
-			  </td>
-			</tr>
-
-			<tr>
-				<td>On foot</td>
-				<td>
-					선유도역 2번 출구에서 도보8분
-				</td>
-			</tr>
-
-			<tr>
-				<td>Parking</td>
-				<td>
-					코오롱디지털타워 지하주차장
-					<br>서울시 영등포구 양평동5가 106-1 (1시간 3,000원)
-				</td>
-			</tr>
-
-			<tr>
-				<td>상세 안내</td>
-				<td>
-					Les601 선유는 2022년 8월에 개관한 포토스튜디오입니다. 양평로22마길 초입에 위치해있으며 같은 골목에 자동차정비소, 드라이아이스업체, 목재소, 그리고 미술공간 Hall 1이 위치해있습니다.
-				</td>
-			</tr>
-		</table>
-</article>
-</details>
+<!-- title -->
+<img src="title.jpg">
 
 
 </div>
@@ -159,58 +99,54 @@
 </div>
 
 	<article>
-		<h3>Mosquitolarvajuice</h3>
 
-				<p style = "margin-bottom: 2em;">
-					번역
+				<p style = "margin-bottom: 2em; color: black;">
+					Where ‘Maldoror’ penetrates its six lips, the lush sunshine tilts along the floor, briefly overlapping with the etheric plane. Here are the bodies that ‘greet another day, another morning after death.’ They were the farmers who tilled the soil of creativity. 
 					<br><br>
-					번역
+					As the birth mother measures her daughter’s energy flow, ‘the endless house’ shudders like an old cuckoo clock that languorously announces every hour. She is vertical only because she is in suspension. Once the bodies that refuse resuscitation match the pitch of the off-beat metronome, the tiny, fairy-skinned motor vibrates toward its anticipated burnout. The empty mother and the lying daughter, the angel with a scythe and the naked firefighter devote themselves to the sexual act of the giver. 
 					<br><br>
-					번역
+					The scene after everything is over and ruined; in other words, the scene freed of life and death is rearranged as a deconstructed opera for a short while. Brewed in the respiratory tube of larvae with the curvature of an anal plug, the alcohol undulates among the invited people. The etheric cocktail doped to droop numb eyelids, incite nausea, and disallow death throes. An acrid finish, this fishy-smelling glass. With swollen and biased eyes shut, proudly savor ‘this unbelievable sleep’...
 					<br><br>
-					번역
+					Like the fleeting morning light that remains crisp even in the sunset or the belief that energy cannot be harmed, recollect remnants of the happenings that have returned in latency, and send the threats back to the hidden addresses of the tattered nerves. Overworked sleepwalkers now place moments of precarious immersion atop the autopsy table.  
 					<br><br>
-				</p>
 
-
-				
-				<p style = "margin-bottom: 2em;">
-					<ol type="a">
-						<li>Kim Eon Hee, 【여느 날, 여느 아침을, 현대문학 2019.7】, 2019</li>
-						<li>Sibylle Ruppert, 【Les Chant de Maldoror, 105 x 85cm, 1978</li>
-						<li>Mire Lee, 【Endless House: Holes and Drops】, multiple ceramic sculptures on a scaffold, lithium carbonate and iron oxide glaze liquid, pump, motor and other mixed media, installed at 2022 Venice Biennale 'The Milk of Dreams', 2022</li>
-						<li>Cha Yeonså, 'Endless House' 게임 엔진에 버츄얼  라이브 시뮬레이션, 모델링 김영광, 2022</li>
-
-						<br>
-						<li>김금원, '모스키토라바쥬스' 공연 시작 안내, 2022</li>
-						<li>Nari Sohn, '라자러스, 내 가슴에 달라붙은 작은 주머니 쥐' 에너지 힐링, 김금원과 라이브 퍼포먼스, 2021/2022</li>
-						
-						<li>Rest in Nothing, 【밀과 보리가 자라네】 (원곡 작사 미상 번안 동요), 편곡, 연주와 노래, 2022</li>
-						<li>Rest in Nothing, 【해가 떠오르네】, 작곡, 연주와 노래, 2022</li>
-						<li>Rest in Nothing, 【진정제 아기천사】, 작곡, 노래, 2022</li>
-						<li>Rest in Nothing, 【슬픈 자들의 목을 쳐】 (부분 인용 Erich Fried 'Die Maßnahmen(조치), 1957), 작곡, 연주와 노래, 2022</li>
-						<li>Rest in Nothing, 【천사】, 작곡, 연주와 노래, 2022</li>
-						<li>Rest in Nothing, 【어서 집으로 돌아오렴】, 작곡, 전자음악과 노래, 2022</li>
-						<li>이상화, '말도로르의 성배' 라이브 퍼포먼스, 모델링 및 금속 제작 김영광, 2022</li>
-
-						<br>
-						<li>Sylvia Plath, 【Lady Lazarus】, 1965</li>
-						<li>Nari Sohn, 'Lady Lazarus' 시 번역 및 한/영 낭독, live performance,2022</li>
-						<li>Gaetano Donizetti, 【Il Dolce Suono】, Opera 'Lucia di Lammermoor', 1835</li>
-						<li>Eric Serra, 【The Diva Dance】, 영화 '제 5원소(Le Cinquième élément)', 1997</li>
-
-						<li>이상화, 화재대응능력2급 '공기호흡기 장착 및 비상호흡법', 라이브 퍼포먼스, 2017/2022</li>
-						<li>이상화, 화재대응능력2급 '요구조자 검색 및 구조', 영안과 라이브 퍼포먼스, 2017/2022</li>
-						<li>이상화, 화재대응능력2급 '소방호스 전개 및 회수', 라이브 퍼포먼스, 2017/2022</li>
-						<li>이상화, '디바댄스' 편곡 및 이재훈/베르나디노 음성으로 가상 악기 보컬 제작, 2022</li>
-						<li>Gaetano Donizetti, 【남 몰래 흐르는 눈물 Una Furtiva Lagrima】 (오페라 '사랑의 묘약 L'elisir d'amore'), 1832</li>
-						<li>이재훈/베르나디노, '남 몰래 흐르는 눈물' 성악 실연, 2022</li>
+				<p style = "margin-bottom: 2em; color:black;">
+					<ol type="a" style = "color:black;">
+						<li>Kim Eon Hee, Another Day, Another Morning (여느 날, 여느 아침을), 2019. (Hyundae Munhak, July 2019)</li>
+						<li>Sibylle Ruppert, Les Chant de Maldoror, 1978. 105 x 85cm.</li>
+						<li>Mire Lee, Endless House: Holes and Drops, 2022. Multiple ceramic sculptures on a scaffold, lithium carbonate and iron oxide glaze liquid, pump, motor and other mixed media. Installed in The Arsenale at the Venice Biennale 2022: The Milk of Dreams.</li>
+						<li>Sylvia Plath, Lady Lazarus, 1965. Translated by Nari Son, 2022.</li>
+						<li>Aglaja Veteranyi, Warum das Kind in der Polenta Kocht, 1999. Translated by Suah Bae, 2021.</li>
+						<li>Gaetano Donizetti, “Il Dolce Suono” from the opera Lucia di Lammermoor, 1835. </li>
+						<li>Gaetano Donizetti, “Una Furtiva Lagrima” from the opera L'elisir d'amore, 1832.</li>
+						<li>Éric Serra, “The Diva Dance” from the film The Fifth Element, 1997.</li>
 						<br>
 
-						<li>Hyosil Yang, 한국예술종합학교에서 '미술과 문화' 비대면 강의, 2020</li>
-						<li>Hyosil Yang, 모스키토라바쥬스에서 비대면 강의, 버츄얼 렉쳐 퍼포먼스, 2020/2022</li>
-						<li>Jiyoung Hong, 【물의 시간들】, 148쪽, 165*260mm, 281g, 보스토크프레스, 2022</li>
-						<li>Jiyoung Hong, 관객 동선 안내와 사진 기록, 소형/중형 필름 및 디지털 카메라, 2022</li>
+						<li>Original songwriter unknown, “Wheat and Barley Grow (밀과 보리가 자라네).” Adapted children’s song. Arranged and performed by Youngahn.</li>
+						<li>Youngahn, “The sun rises (해가 떠오르네),” 2022. Written and performed by Youngahn.</li>
+						<li>Youngahn, “Cherub Sedative (진정제 아기천사),” written and performed by Youngahn, 2022.</li>
+						<li>Youngahn, “Cut the Throats of the Morose (슬픈 자들의 목을 쳐라 )” 2022. Written and performed by Youngahn. (Includes excerpt from Erich Fried’s “Die Maßnahmen,” 1957)</li>
+						<li>Youngahn, “Angel (천사),” 2022. Written and performed by Youngahn.</li>
+						<li>Youngahn, “Quickly Return Home (어서 집으로 돌아오렴),” 2022. Written and performed by Youngahn.</li>
+						<li>Baeksang, Fire Safety Training Level 2 Certificate ‘Breathing apparatus and emergency rescue breathing,’ 2017/2022. Live performance.</li>
+						<li>Baeksang, Fire Safety Training Level 2 Certificate ‘Search and rescue for the rescue requester,’ 2017/2022. Live performance with Youngahn.</li>
+						<li>Baeksang, Fire Safety Training Level 2 Certificate ‘Fire hose handling,’ 2017/2022. Llive performance.</li>
+
+						<br>
+
+						<li>Game engine simulation (Unity) 
+						<li>Screening (LED panel, 2 x 4.5m, Samsung, LG)</li>
+						<li>Sensor system (Perception Neuron, Kinect, Velodyne LiDAR)</li>
+						<li>Sound system (Logic, Presonar, GnS, Shure, KLOTZ, KORG)</li>
+
+						<br>
+
+						<li>Organization/Production/Direction/Development: Yeonså Cha (Host), Sanghwa Lee (Assistant host)</li>
+						<li>Performers - Under the Ceiling: Nari(mother), Geumwon(daughter), Bernardino(tenor)</li>
+						<li>Performers - Under the Sky: Youngahn (singing), Baeksang (electronic music), Jiyoung(photography), Yeonså(host)</li>
+						<li>Virtual body: Mire Lee (from Amsterdam)</li>
+						<li>Virtual lecture: Hyosil Yang (from Seoul)</li>
+						<li>Mosquitolarvajuice 2022</li>
 					</ol>
 				</p>
 
@@ -230,109 +166,7 @@
 </div>
 
 	<article>
-		<div class = "P">
-				<p>
-					NaRi and GeumWon's body
-					<br>under the ceiling
-				</p>
-				<p>
-					<button class = "P_small">Nari Sohn (b. 1967 in Busan, Lives and works in Seoul) seeks ‘the poetical’ in life. Having delved into poetry, love, death, religion, and academia, she is now exploring meditation, energy healing, and performance.</button>
-				</p>
-				<p>
-					<button class = "P_small">Kim Geum-won (2000 Gwangju-born in Seoul) started modeling at the age of 20.</button>
-				</p>
-		</div>
-		<div class = "P">
-				<p>
-					YoungAn and SangHwa's body 
-					<br>
-					under the sky
-				</p>
-				<p>
-					<button class = "P_small">Rest in Nothing (b. 1996 in Jeju, Lives and works in Seoul) aims to receive the unnamed energy in its pure form and release it through music, drawings, performance etc.</button>
-				</p>
-				<p>
-					<button class = "P_small">이상화(1994년 서울 출생, 서울에서 활동)는 응급처치 프로토콜 기반의 창작활동을 해왔다. 확실한 신뢰를 줄 수 있는 약속, 규약 혹은 협약과도 같은 성실함과 순수함을 보여준다.</button>
-				</p>
-		</div>
-
-		<div class = "P">
-			<p>
-				HyoSil's lecture sensored by Depth camera
-			</p>
-			<p>
-				<button class = "P_small">양효실(1967년 서울 출생, 서울에서 활동)는 여성, 청년, 동성애자 등을 재현하는 미적인 혹은 윤리적인 방법의 복수성과 다양성을 전달하는 데 주된 관심을 갖고 있다. 삶을 그 자체로 선명하게 감각하며 이를 글로 드러내기 위해 분투하고 있다.</button>
-			</p>
-		</div>
-
-		<div class = "P">
-			<p>
-				MiRe's sculpture simulated by Game engine
-			</p>
-			<p>
-				<button class = "P_small">Mire Lee(b. 1998 in Seoul, Lives and works in Amsterdam) pursues an experimental aesthetic as she explores the matter-of-factness and dynamics of industrial and technical materials, including machinery and scaffolds. Expressed through the act of working the materials’ physical aspects and textures by hand, her sculptural language evokes primal human desires and the sensory world.</button>
-			</p>
-		</div>
-
-		<div class = "P">
-			<p>
-				JiYoung's body on here and there
-			</p>
-			<p>
-				<button class = "P_small">홍지영(1998년 출생, 서울에서 활동)은 사진을 주요매체로 활동하며, 신체를 기반으로 퀴어, 폭력, 섹슈얼리티를 연구한다.</button>
-			</p>
-		</div>
-
-		<div class = "P">
-			<p>
-				 BernaDino's body on elsewhere
-			</p>
-			<p>
-				<button class = "P_small">이재훈/Bernardino(1991년 서울 출생, 서울 및 전국에서 활동)는 Tito Schipa의 계보를 이어서 전통 벨칸토 성악을 기반으로 연주한다.</button>
-			</p>
-		</div>
-
-		<div class = "P" style="width: 100%;">
-			<p>
-				YeonSå's body in between and between
-			</p>
-				<p>
-					<button class = "P_small">
-
-					Cha Yeonså (b. 1997 in Seoul, Lives and works in Seoul, Republic of Korea) is interested in observing each maturity and network between multiple bodies, minds and energies that survives inside deviant existances. As the best fiction to make them care each other, live simulation games, videos, performances and writings have been shown through online / offline installation. </button>
-				</p>
-		</div>
-
-		<button class ="P_tech">
-			<p>
-				MoCap suit(Perception Neuron)
-			</p>
-			<p>
-				Short throw beam projector(LG)에 Depth camera(Kinect)
-			</p>
-		</button>
-
-		<button class ="P_tech">
-			<p>
-				Electronic Organ(Yamaha) and Electronic Ochestra(Logic)
-			</p>
-			<p>
-				 Game engine(Unity) to LED panel screaning(2m*4.5m)
-			</p>
-		</button>
-
-		<button class ="P_tech" style = "width: 100%;">
-			<p>
-				Sensor system(Velodyne Lidar)
-			</p>
-			<p>
-				Sound system(Presonar, GnS, Shure, KLOTZ)
-			</p>
-			<p>
-				Film cameras(Canon, Mamiya, Koniflex)and Monochrome film(Kodak)
-			</p>
-		</button>
-
+		
 	</article>
 
 </article>
@@ -342,191 +176,189 @@
 
 <article>
 <p>
-	<div class="codes">
-	<span class="code_bold">void Awake</span>()
-	<br>{
-		<p class="codes">
-			Debug.<span class="code_bold">Log</span>(<span class="code_white">"Post 🅛esbian Opera, 🅛iquid Computation, 🅛ive Performance"</span>);
-			<br>
-			<br><span class="code_bold">One</span>();
-			<br><span class="code_bold">Two</span>();
-			<br><span class="code_bold">CurtainCall</span>();
-			<br>
-			<br><span class="code1">print</span> (guide_random);</dd>
-			<br><span class="code2">if</span> (guide_int == <span class="code3">0</span>)
-			{
-				guide_random = <span class="code4">"여느 날 여느 때의 아침을 | GeumWon & NaRi"</span>;
-			}
-			<br><span class="code2">if</span> (guide_int == <span class="code3">1</span>)
-			{
-				guide_random = <span class="code4">"죽어서 맞는다는 거 | YoungAn & SangHwa"</span>;
-			}
-			<br><span class="code2">if</span> (guide_int == <span class="code3">2</span>)
-			{
-				guide_random = <span class="code4">"Endless house | MiRe"</span>;
-			}
-
-			<br><span class="code2">if</span> (guide_int == <span class="code3">3</span>)
-			{
-				guide_random = <span class="code4">"The song of Maldoror | BernaDino"</span>;
-			}
-
-			<br><span class="code2">if</span> (guide_int == <span class="code3">4</span>)
-			{
-				guide_random = <span class="code4">"어처구니없는 삶으로부터도 | HyoSil"</span>;
-			}
-
-			<br><span class="code2">if</span> (guide_int == <span class="code3">5</span>)
-			{
-				guide_random = <span class="code4">"어처구니없는 죽음으로부터도 | JiYoung"</span>;
-			}
-			<br><span class="code2">if</span> (guide_int == <span class="code3">6</span>)
-			{
-				guide_random = <span class="code4">"What a trash | YeonSå"</span>;
-			}
-	<br>}
-</div>
+	
 </p>
-
 		<details>
-			<summary>Post Lesbian Opera, Liquid Computation</summary>
+			<summary>Project Info</summary>
 				<p>
-					차연서는 기획/연출/개발을 겸하는 창작자로서 ‘리퀴드 컴퓨테이션'과 융합된 ‘포스트 레즈비언 오페라'를 새로운 장르로 모색한다.
-
-					<ul>
-						<li>2022.11 Juicy Mosquito, 라이브 퍼포먼스, 한국예술종합학교 본관갤러리, 서울 성북구, 대한민국</li>
-						<li>2022.01 Every mosquito feels the same, 협력적 개인전, TINC, 서울 성북구, 대한민국</li>
-					</ul>
+					<dt>Mosquitolarvajuice</dt>
 				</p>
 				<p>
-					쥬시 모스키토 라이브는 '가위치기'라는 마찰 체위를 변형하며 출발한다. 삽입에의 죄책감과 매혹, 편향되고 부은 눈이 만드는 날선 촉각에 대해 다루고, 스스로 감금된 자들을 위한 불가능한 탈출론을 고안한다. 
+					<dt>Date & Time</dt>
+					<dd>
+						<li>Option 1 - Dec. 30th, 2022 (Fri), 11AM</li>
+						<li>Option 2 - Dec. 31st, 2022 (Sat), 11AM</li>
+						<li>Act 1, Act 2, Curtain Call – Running time approx. 1hr</li>
+					</dd>
 				</p>
-
 				<p>
-					이어서 녹화된 설치이자 약속된 풍경으로서 '애브리 모스키토'는 소금으로 구획된 무대에 정지된 퍼포머들처럼 가둬진 신체와 미디어, 즉슨 트라우마들을 햇볕으로 날려보내는 이야기로 시차를 둔 애프터파티 혹은 커튼콜을 전했다. 
+					<dt>Directions</dt>
+					<dd>
+						<li>LES601 Sunyu</li>
+						<li>2, Yangpyeong-ro 22ma-gil, Yeongdeungpo-gu, (107-3) 1st floor (Yangpyeong-dong 5ga)</li>
+						<li>Subway: 8 minute walk from Seonyudo Station - Exit 2</li>
+						<li>Parking: underground parking lot at Seonyudo Kolon Digital Tower (106-1 Yangpyeongdong 5ga, Yeongdeungpo-gu, Seoul) (rate: 3,000 KRW /hr)</li>
+						<li>Nearby building: Les601 Sunyu is a photo studio that opened in August 2022. It is located where Yangpyeong-ro 22ma-gil starts, and, along the street, you can find an auto repair shop, a dry ice company, a timber yard, and an art space called Hall 1.</li>
+					</dd>
 				</p>
 				<p>
-					이번 모스키토쥬스 생사를 알 수 없는, 혹은 수없이 환생하는, 애늙은 유충들과 함께 - 모욕감을 장신구 마냥 과시하기 시작한다. 다양한 레이어의 마취된/진정된/잠든 신체를 무대에 위치시키며, 우리들에게 긴요한 가능태로서의 창조적 노동, 회복, 그리고 사랑에 대해 주파수를 맞춰보기로 한다. 그것은 소진된 채 살아있는 몸과 마음, 그리고 에너지를 위한 '조치'가 된다.
+					<dt>Audience Capacity & Space</dt>
+					<dd>
+						<li>Total: 80 ppl. per run</li>
+						<li>Under the Ceiling, Under the Sky – You can freely move between the two rooms.</li>
+					</dd>
+					
+				</p>
+				<p>
+					<dt>Ticket</dt>
+					<dd>
+						<li>Voluntary Donation (하나은행 24991019337007 차연서) </li>
+						<li>The ticket comes with 1 glass of mosquito lava juice (60ml) & a stainless cocktail jigger etched with the project logo of Mosquitolavajuice. </li>
+						<li>You can take the glass with you after the performance as a souvenir.</li>
+					</dd>
+					
+				</p>
+				<p>
+					<dt>Contact</dt>
+					<dd>
+						<li>energywhoisshe@gmail.com</li>
+						<li>instagram.com/msqt.kr</li>
+						<li>msqk.kr</li>
+						<li>Please feel free to contact the organizer for any questions regarding accessibility or the performance in general.</li>
+						<li>Organized by Cha Yeonså</li>
+						<li>Sponsored by Seoul Metropolitan Government, Seoul Foundation for Arts and Culture – Unfold X</li>
+					</dd>
 				</p>
 		</details>
 
 		<details>
-			<summary>Connected, Involved, Caring People</summary>
-
+			<summary>Post-lesbian Opera, Liquid Computation</summary>
 				<p>
-				<dt>출연/출현/연출</dt>
-					<dd>
-						퍼포머 | 차연서 손나리 이상화 오혜령 홍지영 이재훈
-						<br>회복세션 연출 | 손나리 차연서
-						<br>소생거부세션 연출 | 이상화 차연서
-						<br>자장가세션 연출 | 오혜령 차연서
-					</dd>
+					As a director, producer, and developer, Yeonså Cha seeks to devise a new genre that synthesizes ‘liquid computation’ and ‘post-lesbian opera.’
 
-					<dd>
-						조각 원작 및 자료 제공, 변용 자문 | 이미래 
-						<br>영시 원본 | 실비아 플라스
-						<br>영시 번역 및 낭독 | 손나리
-						<br>비대면 강의 | 양효실
-						<br>커미션곡1 연주 및 창작곡 셋리스트 | 영안/오혜령
-						<br>커미션곡2 리믹스 및 프로듀싱 | 벨라
-						<br>커미션곡3 연주 및 성악 자문 | 이재훈
-						<br>드랙 차용 자문 | 이수/미년
-					</dd>
+					<ul>
+						<li>2022.11 Juicy Mosquito, Live performance, Korea National University of Arts - Main Building Gallery, Seongbuk-gu, Seoul, South Korea</li>
+						<li>2022.01 Every mosquito feels the same, Collaborative solo show, TINC, Seongbuk-gu, Seoul, South Korea</li>
+					</ul>
+				</p>
+				<p>
+					Juicy Mosquito begins with a modification of ‘scissoring,’ a type of sexual act involving rubbing. The live performance concerns the guilt and captivation with penetration, and the heightened sense of touch engendered by biased, swollen eyes. It devises an impossible theory of escape for those who have confined themselves.  
 				</p>
 
-			<p>
-				<dt>현장/기록/오퍼레이션</dt>
-				<dd>
-						도어걸 | 김금원, 안현진
-						<br>음향 기록 | 
-						<br>영상 기록 | 
-						<br>사진 기록 | 홍지영
-						<br>센서 기록 | 차연서
-						<br>
-						<br>장소 | Les601, 양평로22마길 2
-						<br>음향 | Stomp!
-						<br>영상 | Smart Interactive
-						<br>
-				</dd>
-			</p>
+				<p>
+					Subsequently presented as a recorded installation and promised landscape, Every Mosquito is a suspension of bodies and media, like the performers frozen on the salt-partitioned stage. It is a curtain call or an after party–a latent tale of traumas released into the sunshine.
+				</p>
+				<p>
+					Accompanied by the elderly young larvae of which life and death is unknown or which reincarnates countless times, Mosquitolarvajuice begins flaunting insults as trappings. By situating various layers of anesthetized/sedated/sleeping bodies on the stage, we decide to tune into the frequency of creative labor, recovery, and love as vital potentialities. This becomes ‘actionable steps’ for the body, mind, and energy living in exhaustion.
+				</p>
+		</details>
 
+		<details>
+			<summary>People who are connected, associated, and caregivers (Last Update 2022/01/10)</summary>
 			<p>
-				<dt>무대/기술</dt>
-				<dd>
-						공간디자인 | NACA/김혜정
-						<br>금속디자인 | 김영광
-						<br>3D 스컬핑 | 김영광
-						<br>게임엔진 시뮬레이션 개발 | 차연서
-						<br>MoCap 연동 개발  | 
-						<br>AR 개발  |
-						<br>인터렉티브 사운드 | 곽지원
-				</dd>
-			</p>
+				<dt>Cast/Production/Music</dt>
+					<dd>Performer | Nari Sohn, Geumwon Kim, YoungAhn, BaekSang, Jiyoung Hong, Bernadino Lee, Yeonså Cha 
 
-			<p>
-				<dt>홍보/아카이빙</dt>
-				<dd>
-						일러스트레이션 | 시빌 루퍼트
-						<br>일러스트레이션 변용 허락 | 폴 월터 (시빌 루퍼트 사후 유산 소유)
-						<br>일러스트레이션 기록 사진 공유 | 마르코 위지그 (기가 뮤지엄 디렉터)
-						<br>디자인 | 인현진
+					<li>Energy healer & 'Lady Lazarus' Poetry reader & translator | Nari Sohn</li>
+					<li>'Una Furtiva Lagrima' opera singing | Bernadino Lee</li>
+					<li>'Wheat and Barley Grow' and original music set list | YoungAhn</li>
+					<li>'Il Dolce Suono' & 'Diva Dance' Electronic Music/Virtual Instrument production, Breathing apparatus & Fire horse operation | BaekSang</li>
+
+					<br>
+
+					Virtual Body | Mire Lee 
+					Virtual Lecture | Hosil Yang
+					<li>Original sculpture & related materials provided by, Adaptation advisor | Mire Lee</li>
+					<li>Remote lecturer | Hyosil Yang </li>
+					<li>Remote lecture Participants | Nari Sohn, Geumwon Kim, YoungAhn, BaekSang, Jiyoung Hong, Yeonså Cha, Mire Lee, Yeonsuk Rita Lee</li>
+					<br>
+
+					Performance advisor as a drag performance artist | Isu Mignon Mignonne
+					<li>Voice therapy to YoungAn / Voice sampling support to BaekSang | Bernardino Lee</li>
+					<br>Cooperation of english poem adaptation | Eunsook Jeong (Maumsanchaek), Plath Estate
+					<br>Cooperation of english poem adaptation | Eunsook Jeong (Maumsanchaek), Plath Estate
 						
-						<br>웹사이트 제작 | 차연서
+					</dd>
+			</p>
+
+			<p>
+				<dt>Stage/Tech</dt>
+				<dd>
+					Metal craft | Youngkwang Kim
+					Space design | NACA
+					<br>LED screen rental & installation | SMART Interactive Co.
+					<br>Lidar Sensor Support | Lumisol Co.
+					<br>
+					<li>Game engine simulation development | Energywhoisshe</li>
+					3D Sculpting (Zbrush / Rhino) | Youngkwang Kim
+					Interactive Sound Support | Jiwon Kwak
+					<li>Sound system (Virtual Instrument, Mic, Speaker, Mixer) | Sanghwa Lee, Yeonså Cha  </li>
+					<li>Sensor system (Azure Kinect, Velodyne Lidar, Perception Neuron) | Yeonså Cha, Sanghwa Lee</li>
+				</dd>
+			</p>
+
+			<p>
+				<dt>Admissions/Documentation</dt>
+				<dd>
+						Doorpersons (entrance/drinks/goods) | Hyunjin Ahn, Solyup Lee
+						<br>① B&W photo documentation | Jiyoung Hong
+						<br>② LiDAR sensor documentation | Yeonså Cha  
+						<br>③ Sound & Video documentation | Taeyoung Park
+						<br>Space rental & cooperation | LES601 Sunyou
+				</dd>
+			</p>
+
+			<p>
+				<dt>Promo/Archiving</dt>
+				<dd>
+						Original illustration by | Sibylle Ruppert 
+						<br>Cooperation of original illustration adaptation | Paul Walter (Owner of Sibylle Ruppert’s posthumous legacy), Marco Witzig (Director of HR Giger Museum)
+						<li>Website development | Yeonså Cha</li>
 							<ol>
-								<li>레거시 러셀, 다연 옮김, 『글리치 페미니즘 선언』, 미디어버스, 2022</li>
-								<li>다이애나 테일러, 용선미 옮김, 『퍼포먼스 퍼포먼스』, 나선프레스, 2021</li>
-								<li>줄리아 브라이언 윌슨, 신현진 옮김, 『미술노동자』, 열화당, 2021</li>
-								<li>로트레아몽, 황현산 옮김, 『말도로르의 노래』, 문학동네, 2018</li>
-								<li>지영, 『지영』, 2022</li>
+								<li>Legacy Russell, Glitch Feminism: A Manifesto, translated by Dayun, Mediabus, 2022.</li>
+								<li>Diana Taylor, Performance, Performance, translated by Yong Seonmi, Rasunpress, 2021.</li>
+								<li>Comte de Lautréamont, The Songs of Maldoror, translated by Hwang Hyunsan, Munhakdogne, 2018.</li>
+								<li>Jiyoung, 『Jiyoung』, Juro Press, 2022.</li>
 							</ol>
-						<br>서문 | 차연서
-						<br>번역 | 류다연
-						
+						<li>Exhibition Statement | Yeonså Cha</li>
+						Poster & Title Design | Hyunjin In
+						<br>Website translation | Dayun Ryu
 				</dd>
 			</p>
 
 			<p>
-				<dt>기획/진행</dt>
+				<dt>Organization/Logistics</dt>
 				<dd>
-						원작 | Cha Yeonså
-						기획 | Cha Yeonså
-						<br>제작 | Cha Yeonså
-						<br>연출 | Cha Yeonså
-						<br>조연출 (진행 보조 겸임) | 이상화
-						<br>예산 | 이상화 Cha Yeonså
-						<br>일정 | Cha Yeonså 이상화
-						<br>기획 책임 자문 | 현시원 임익수
-						<br>Mentoring Program | 서울문화재단 융합예술팀
-						<br>제작 지원 | 서울문화재단 2022 Unfold X 기획자캠프 
+					<li>Organization/Production/Direction | Yeonså Cha </li>
+					<li>Assistant director/PM/Line producer | Sanghwa Lee </li>
+					<li>Costume/Tools/Toys | Yeonså Cha, Sanghwa Lee </li>
+					<li>Goods | Energywhoisshe</li>
+					<br>Selected program | 2022 Unfold X Planning Camp
+					<br>Planning advisor | Siwon Hyun, Iksoo Lim 
+					<br>‘Planning Camp’ program organized by | Convergence Art team at Seoul Foundation for Arts and Culture
+
+					<br>
+					<br>Hosted by | 차연서 Cha Yeonså
+					<br>Funded by | Seoul Metropolitan Government, Seoul Foundation for Arts and Culture 
 				</dd>
 			</p>
 		</details>
 
 </article>
 
+<figure>
+	<img src="mosquitolarvajuice.png" style="width: 100px;">
+</figure>
 
-<a onClick="window.location.reload()" style="cursor: pointer;"><marquee class = "signage3"></marquee></a>
-
-<nav class = "title2"></nav>
-<nav class = "title_white2"></nav>
-
-<!-- ----------------------------------------- -->
-<main class="bottom">
-
-<div class="second">
-<div class="bg-wrap">
-<div class="bg">
-	<figure>
-		<img src="mosquitolarvajuice.png" style="width: 100px;">
-	</figure>
-</div>
-</div>
 </body>
 
 
+<footer style="color:black">
+	차연서 Cha Yeonså © 2022. <a href = "index.html">msqt.kr</a>
+	<p>
+		Last updated 2022.1.10
 
-<footer>
-	Cha Yeonså © 2022. <a href = "index.html">msqt.kr</a>
+	</p>
 </footer>
 </main>
 </html>
